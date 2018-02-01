@@ -1,0 +1,291 @@
+nav {
+    background-color: $white !important;
+    border: none !important;
+    font-size: 16px;
+    color: $dark !important;
+    cursor: pointer;
+    font-family: $vag;
+    position: absolute;
+    padding: 5px;
+
+    // FIX FOR BOOTSTAP-UI
+    .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+    .navbar-collapse.in {
+        overflow-y: hidden;
+    }
+    .navbar-header{
+        .logo a img {
+            width: 120px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .mobile-buttons {
+            padding: 10px;
+            img.arrow-white-right {
+                height: 15px;
+                margin-left: 5px;
+            }
+            a.call-us {
+                padding-top: 10px;
+                text-decoration: none;
+                .icon {
+                        width: 22px;
+                        height: 22px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        background: #fcb316;
+                        position: relative;
+                    img {
+                        position: absolute;
+                        left: 4px;
+                        top: 4px;
+                        width: 14px;
+                        height: 14px;
+                        // top: 50%;
+                        fill: $white;
+                    }
+                }
+                strong {
+                    top: -5px;
+                    position: relative;
+                    margin-left: 5px;
+                    color: $orange;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #navbar {
+        ul {
+            li {
+                color: $blue;
+                font-family: $vag;
+                margin: 4px;
+                padding: 4px;
+                a.dropdown-toggle {
+                    span {
+                        width: 14px;
+                        height: 10px;
+                        right: 0px;
+                        float: right;
+                        margin-left: 8px;
+                    }
+                }
+
+                .btn {
+                    a {
+                        color: $white;
+                        background-color: none;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: bold;
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                }
+
+                ul.dropdown-menu {
+                    background-color: $lightgray;
+                    li {
+                        margin: 5px;
+                        a {
+                            padding: 2px 20px !important;
+                            color: $dark !important;
+                            font-family: $avenir--book;
+                            font-size: 16px;
+                            &:hover, &:active, &:focus {
+                                background-color: $lightgray !important;
+                            }
+                            img {
+                                width: 11px;
+                                height: 11px;
+                                margin-left: 6px;
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $colorText;
+                                img {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        &:hover {
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.blue {
+            li {
+                &.active {
+                    a {
+                        &::after {
+                            display: block;
+                            background: $orange;
+                        }
+                    }
+                }
+                a {
+                    color: $blue;
+                    &:hover {
+                        &::after {
+                            background: $orange;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.orange {
+            li {
+                &.active {
+                    a {
+                        &::after {
+                            background: $orange;
+                        }
+                    }
+                }
+                a {
+                    color: $orange;
+                    &:hover {
+                        &::after {
+                            background: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Styles for Larger Screens
+@media only screen and (min-width : $screen-md) {
+    // anything over 1200
+    nav {
+        height: 94px;
+        width: 100%;
+        padding-bottom: 23px;
+        padding-right: 30px;
+        cursor: pointer;
+
+        .navbar-header > .logo {
+            float: left;
+            padding: 0 20px 0 80px;
+            a {
+                img {
+                    width: 189px;
+                    height: 95px;
+                }
+            }
+        }
+
+        .navbar-right {
+            margin-right: 0px;
+            ul > li { margin: 0 5px; }
+        }
+
+        #navbar {
+            margin-top: 38px;
+            font-size: 16px;
+            margin-left: 40px;
+
+            ul {
+                border-radius: 4%;
+                li.contains-btn {
+                    &:hover, &:active, &:focus {
+                        border: none !important;
+                    }
+                }
+                li {
+                    color: $blue;
+                    &:hover, &:active, &:focus {
+                        border-bottom: solid 2px $orange;
+                        background-color: $white !important;
+                    }
+
+                    // HACK to make the pop up on hover
+                    &:hover {
+                        .dropdown-menu {
+                            display: block;
+                            visibility: visible;
+                        }
+                    }
+
+                    a.singleBtn {
+                        padding: 10px 15px;
+                    }
+
+                    a.dropdown-toggle {
+                        padding: 10px 15px;
+                        span {
+                            width: 14px;
+                            height: 10px;
+                            right: 0px;
+                            float: right;
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .btn {
+                        float: left;
+                        margin-left: 20px;
+                        padding: 9px 18px;
+                        height: 42px !important;
+                        a {
+                            img {
+                                height: 15px;
+                            }
+                        }
+                    }
+
+                    ul.dropdown-menu {
+                        margin-right: -10px !important;
+                        li {
+                            margin: 18px 6px;
+                            &:hover, &:active, &:focus {
+                                border: none;
+                            }
+                            a {
+                                font-size: 16px;
+
+                            }
+                            &.active {
+                                a {
+                                    img {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : $screen-md-max + 105) {
+    // 1200 + 105 because both menus crash at that width
+    // Trying to minify as much as possible
+    nav {
+        font-size: 16px;
+        .logo {
+            padding-right: 0px;
+                a img {
+                width: 160px;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+        #navbar ul li a.singleBtn, a.dropdown-toggle { padding: 10px 5px 10px 0px;}
+        ul.dropdown-menu li a { padding: 2px 2px !important; }
+     }
+ }

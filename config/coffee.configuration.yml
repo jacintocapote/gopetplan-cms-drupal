@@ -1,0 +1,7 @@
+coffee_menus:
+  admin: admin
+  main: main
+  tools: tools
+max_results: 4
+_core:
+  default_config_hash: cOqVnz_7pbb_0R31nQwih4Gh8XkmIbyFagFp6uUPaOc

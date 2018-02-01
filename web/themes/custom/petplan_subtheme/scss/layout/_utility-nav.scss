@@ -1,0 +1,61 @@
+.utility-nav {
+    position: absolute;
+    top: 7px;
+    right: 60px;
+    li {
+        float: left;
+        font-family: $font-family--bold;
+        font-size: 14px;
+        line-height: (20/14);
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover, &:active, &:focus {
+            border: none;
+        }
+        &:last-child {
+            padding-right: 5;
+            border-left: 1px solid $grey;
+        }
+        a {
+            display: block;
+            color: $x-dark-grey;
+            .no-touch &:hover {
+                color: #666666;
+                span{
+                    transform: scale3d(1.3, 1.3, 1);
+                    background-color: #666666;
+                }
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        vertical-align:text-top;
+        height: 14px;
+        width: 14px;
+        background-color: $x-dark-grey;
+        border-radius: $br--rounded;
+        margin-right: 5px;
+        margin-top: 1px;
+    }
+    .phone {
+        vertical-align:text-top;
+        margin-top: 2px;
+        margin-left: 4px;
+        width: 6px;
+        height: 8px;
+        path {
+            fill: $white;
+        }
+    }
+    .login {
+        vertical-align:text-top;
+        margin-top: 2px;
+        margin-left: 4px;
+        width: 6px;
+        height: 7px;
+        path {
+            fill: $white;
+        }
+    }
+}

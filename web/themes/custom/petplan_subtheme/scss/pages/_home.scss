@@ -1,0 +1,125 @@
+section.primary-view {
+    padding-top: 45px !important;
+}
+#block-homepagehero {
+    padding-top: 0px !important;
+    
+    .jumbotron{
+        color: $white;
+        background: #ffc400;
+        background: -moz-linear-gradient(top,#ffc400 0,#fcb316 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ffc400),color-stop(100%,#fcb316));
+        background: -webkit-linear-gradient(top,#ffc400 0,#fcb316 100%);
+        background: -o-linear-gradient(top,#ffc400 0,#fcb316 100%);
+        background: -ms-linear-gradient(top,#ffc400 0,#fcb316 100%);
+        background: linear-gradient(to bottom,#ffc400 0,#fcb316 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+        text-align: center;
+        .container {
+            background-image: url('/themes/petplan_subtheme/images/swirly_line.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        img.dog {
+            margin: 0 0 0 40px;
+        }
+        .dog-name {
+            font-family: $hand-of-sean;
+        }
+        h1 {
+            font-family: $vag;
+            text-transform: uppercase;
+            font-size: 36px;
+            span.delicious {
+                font-family: $hand-of-sean;
+                font-weight: 200;
+                text-transform: lowercase;
+                color: #ffe98f;
+            }
+        }
+        div.appetite {
+            font-family: $font-family--primary;
+            margin: 10px 0;
+            text-align: center;
+        }
+        div.see {
+            font-family: $font-family--bold;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .sub-form {
+            text-align: center;
+
+            form {
+                width: 100%;
+                margin: 5px auto;
+            }
+
+            .field {
+                float: left;
+                padding: 4px;
+                height: 50px;
+            }
+            .formBtn {
+                padding: 12px;
+                &.custom {
+                    .btn.btnLink {
+                        padding-top: 0px;
+                        padding-bottom: 10px;
+                        line-height: 48px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width : $screen-sm) {
+    #block-homepagehero .jumbotron{
+        padding-top: 40px;
+        padding-bottom: 0px;
+        .dog-name {
+            margin-top: 320px;
+            margin-left: 40px;
+            font-size: 20px;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 60px;
+            letter-spacing: .025em;            
+            margin-bottom: 40px;
+            span.delicious {
+                font-size: 60px;                
+            }
+        }
+        div.appetite {
+            font-family: $font-family--bold;
+            font-weight: 600;
+            font-size: 100%;
+            margin: 12px 0;
+        }
+        div.see {
+            font-family: $font-family--x-bold;
+            font-weight: 800;
+            font-size: 100%;
+            margin: 12px 0;
+        }
+        .sub-form {
+            padding: 10px 20px;
+            .field {
+                float: left;
+                width: 42%;
+                padding: 12px;
+                height: 50px;
+            }
+            .formBtn {
+                float: left;
+                margin-left: 15px;
+                padding: 12px;
+            }
+        }
+    }
+}

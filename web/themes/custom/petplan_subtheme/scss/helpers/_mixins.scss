@@ -1,0 +1,72 @@
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+//linear gradient
+@mixin linearGradient($top, $bottom) {
+  background: $top; /* Old browsers */
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(100%, $bottom)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0); /* IE6-9 */
+}
+
+@mixin placeholder($txtcolor,$font,$fontsize) {
+  &::-webkit-input-placeholder {
+    color: $txtcolor;
+    font-family: $font;
+    font-size: $fontsize;
+  }
+  &::-moz-placeholder {
+    color: $txtcolor;
+    font-family: $font;
+    font-size: $fontsize;
+  }
+  &:-moz-placeholder {
+    color: $txtcolor;
+    font-family: $font;
+    font-size: $fontsize;
+  }
+  &:-ms-input-placeholder {
+    color: $txtcolor;
+    font-family: $font;
+    font-size: $fontsize;
+  }
+}
+
+@mixin animate($second) {
+  -webkit-transition: all $second linear;
+  -moz-transition: all $second linear;
+  -ms-transition: all $second linear;
+  -o-transition: all $second linear;
+  transition: all $second linear;
+}
+
+@mixin bgImg($img, $bgColor: null, $repeat: null, $position: null, $bgSize: null, $bgAttachment:null) {
+  background-image: url($pathImg + $img);
+  background-color: $bgColor;
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $bgSize;
+  background-attachment: $bgAttachment;
+}
+
+@mixin vendor-prefix($name, $argument...) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin clearAfter {
+  &::after {
+    content: " ";
+    clear: both;
+    display: block;
+  }
+}

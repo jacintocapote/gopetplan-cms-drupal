@@ -1,0 +1,142 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M490.057 21.943c29.257-29.257 76.8-29.257 102.4 0 29.257 29.257 29.257 76.8 0 102.4l-384 387.657 387.657 387.657c29.257 29.257 29.257 76.8 0 102.4-29.257 29.257-76.8 29.257-102.4 0l-493.714-490.057 490.057-490.057z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "width": 616,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "arrow-left"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 3,
+        "id": 2,
+        "name": "arrow-left",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M615.863 512l-490.423 490.423c-13.29 13.29-31.651 21.511-51.931 21.511-40.561 0-73.442-32.881-73.442-73.442 0-20.28 8.22-38.641 21.511-51.931l386.926-386.56-386.926-386.926c-13.29-13.29-21.511-31.651-21.511-51.931 0-40.561 32.881-73.442 73.442-73.442 20.28 0 38.641 8.22 51.931 21.511l-0-0z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "width": 616,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "arrow-right"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 4,
+        "id": 1,
+        "name": "arrow-right",
+        "prevSize": 32,
+        "code": 59649
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M790.261 1012.87l-745.739-801.391c-44.522-55.652-44.522-122.435 0-166.957s111.304-44.522 155.826 0l589.913 634.435 589.913-634.435c44.522-55.652 122.435-55.652 155.826 0s44.522 122.435 0 166.957l-745.739 801.391z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "width": 1569,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "dropdown"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 6,
+        "id": 0,
+        "name": "dropdown",
+        "prevSize": 32,
+        "code": 59650
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 2
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "petplan-icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "petplan-icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "showSelector": true,
+      "showMetrics": true,
+      "showMetadata": true,
+      "showVersion": true,
+      "noie8": true,
+      "ie7": false,
+      "autoHost": false,
+      "cssVars": true,
+      "cssVarsFormat": "scss"
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "quickUsageToken": {
+      "UntitledProject": "MjU2Y2ZhYTVkODYzNDk4MjZhNjBiZmExNDAyZmQ4MTAjMSMxNTA5MzYxOTg4IyMj"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.social-nav {
+    @extend %clearfix;
+    li {
+        float: left;
+        margin-right: 12px;
+        a {
+            display: block;
+            .no-touch &:hover {
+                .social-icon__bg {
+                    fill: darken($color-primary, 10%);
+                }
+            }
+        }
+    }
+}

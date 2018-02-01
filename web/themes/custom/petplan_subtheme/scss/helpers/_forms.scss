@@ -1,0 +1,233 @@
+.fieldStyle {
+    input[type=text], input[type=number], input[type=email], input[type=password], textarea {
+        width: 100%;
+        color: #999999;
+        font-size: $fontSize + 4px;
+        height: 50px;
+        padding: 13px;
+        border: 0;
+        border-radius: 10px;
+        background-color: $lightgray;
+        @include vendor-prefix(box-shadow, inset 0px 2px 7px 0px rgba(0,0,0,0.2));
+        @include placeholder(#d9d9d9, $font-family--primary, 20px);
+
+        &.has-error {
+            border: 2px solid $colorError;
+            @include vendor-prefix(box-shadow, none);
+        }
+    }
+    select {
+        width: 100%;
+    }
+    .select2-container {
+        width: 100% !important;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 160px;
+    }
+    .field-label {
+        color: $blue;
+        line-height: 50px;
+    }
+}
+.field-line {
+    @include clearAfter();
+    & > .field-label {
+        width: 30%;
+        float: left;
+        padding-top: 11px;
+        font-family: $font-family--secondary;
+        line-height: 1;
+
+        &.pt0 {
+            padding-top: 0;
+        }
+    }
+    &> .field {
+        float: right;
+        width: 68.75%;
+    }
+}
+
+.field {
+    input {
+        border: 2px solid #e5e5e5;
+        height: 50px;
+        border-radius: 10px;
+        padding: 13px;
+        background-color: #fff;
+        font-size: 20px;
+    }
+    label {
+        font-size: $fontSize + 2px;
+        font-family: $vag;
+        color: #a7a9ac;
+        line-height: 50px;
+    }
+    .has-error {
+        border: 2px solid $colorError;
+    }
+    &.has-error {
+        input {
+            border: 2px solid $colorError;
+        }
+        .select2-container--default {
+            .select2-selection--single {
+                border: 2px solid $colorError;
+                @include vendor-prefix(box-shadow, none);
+            }
+        }
+    }
+}
+.btn {
+    height: 50px;
+    line-height: 47px;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 0 15px;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    font-family: $vag;
+    @include transition(all 0.3s);
+
+    &.blueBtn {
+        color: #fff;
+        padding-right: 70px;
+        background-color: $blue;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.22);
+
+        &::after {
+            font-family: $icomoon-font;
+            content: $icon-arrow-right;
+            font-size: 15px;
+            line-height: 25px;
+            display: block;
+            height: 25px;
+            width: 20px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+        &.fsz21 {
+            font-size: $fontSize + 5px;
+        }
+
+        &:hover {
+            background-color: darken($blue,10%);
+        }
+    }
+
+    &.btnLink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 50px;
+    }
+
+    &.orangeBtn {
+        color: #fff;
+        font-family: $vag;
+        font-size: 17px;
+        padding-right: 35px;
+        background-color: $orange;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.22);
+
+        &::after {
+            font-family: $icomoon-font;
+            content: $icon-arrow-right;
+            font-size: 15px;
+            line-height: 25px;
+            display: block;
+            height: 25px;
+            width: 20px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            background-color: darken($orange,10%);
+        }
+    }
+
+    &.whiteBtn {
+        color: $orange;
+        font-size: 17px;
+        display: inline-block;
+        background-color: #fff;
+        @include vendor-prefix(box-shadow, 0px 1px 3px 1px rgba(0, 0, 0, 0.22));
+
+        &.colorBlue {
+            color: $blue;
+        }
+        &:hover {
+            background-color: darken(#fff,10%);
+        }
+    }
+
+    &.noArrow {
+        &::after {
+            display: block;
+        }
+    }
+}
+.validation-message {
+    font-family: $font-family--secondary;
+    color: $colorError;
+    font-size: 16px;
+    padding-left: 4px;
+    margin-top: 5px;
+    text-align: left;
+}
+.check-style {
+    label {
+        display: inline-block;
+        line-height: 26px;
+        font-size: 20px;
+        font-family: $font-family--primary;
+    }
+    .check-info {
+        position: relative;
+        padding-left: 35px;
+        color: $colorBold;
+
+        &:before {
+            content: '';
+            border-radius: 10px;
+            width: 26px;
+            height: 26px;
+            background-color: $lightgray;
+            background-position: center;
+            @include vendor-prefix(box-shadow, inset 0px 2px 7px 0px rgba(0,0,0,0.2));
+            // @include posFull($position: absolute, $left: 0, $top: 0);
+            @include transition(all 0.3s);
+        }
+    }
+    input {
+        &[type=checkbox], &[type=radio] {
+            display: none;
+
+            &:checked {
+                & + .check-info {
+                    &:before {
+                        // @include bgImg( 'check.png', $bgColor: $orange, $repeat: no-repeat, $position: center );
+                    }
+                }
+            }
+        }
+    }
+}
+label {
+    &.check-style {
+        display: inline-block;
+
+        .field & {
+            line-height: 26px;
+            font-size: 20px;
+            font-family: $font-family--primary;
+        }
+    }
+}

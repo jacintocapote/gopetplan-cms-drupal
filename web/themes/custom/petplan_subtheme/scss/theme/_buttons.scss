@@ -1,0 +1,109 @@
+//button styles 
+.btnStyle {
+    display: inline-block;
+    border-radius: 10px;
+    line-height: 26px;
+    font-size: 18px;
+    padding: 9px 18px;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    font-family: $vag;
+    @include transition(all 0.3s);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.22);
+    &.withArrow {
+        padding-right: 40px;
+        &.pr70 {
+            padding-right: 70px;
+        }
+    }
+    &.withArrowInline {
+        display: block;
+        width: 100%;
+    }
+    &.blue {
+        color: #fff;
+        background-color: $blue;
+        &.liner {
+            border-color: $blue;
+            color: $blue;
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+        &:hover {
+            background-color: darken($blue,10%);
+        }
+    }
+    &.orange {
+        color: #fff;
+        background-color: $orange;
+        &.liner {
+            border-color: $orange;
+            color: $orange;
+            &:hover {
+                background-color: $orange;
+                color: #fff;
+            }
+        }
+        &:hover {
+            background-color: darken($orange,10%);
+        }
+    }
+    &.liner {
+        background-color: #fff;
+        border-width: 2px;
+        border-style: solid;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+.btnSize2 {
+    padding: 12px 14px;
+    &.liner {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.socButton {
+    img {
+        width: 25px;
+        vertical-align: middle;
+    }
+}
+.btnPinterest {
+    background-color: #bd081c;
+    color: #fff;
+    &:hover {
+        background-color: darken(#bd081c,10%);
+    }
+}
+.btnTwitter {
+    background-color: #55acee;
+    color: #fff;
+    &:hover {
+        background-color: darken(#55acee,10%);
+    }
+}
+
+//shadow
+.shadowBorder {
+    border: 5px solid #fff;
+    box-shadow: inset 0px 1px 7px 1px 2px 7px -2px #a1a1a1;
+}
+.shadowInset {
+    box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.shadow {
+    box-shadow: 1px 2px 7px -2px #a1a1a1;
+}
+.shadowNone {
+    box-shadow: none;
+}
+.border {
+    border: 2px solid #d9d9d9; 
+}
+.border-bottom {
+    border-bottom: 2px dotted #d9d9d9;
+}
