@@ -15,6 +15,7 @@
     "drupal-composer/drupal-scaffold": "^2.0.1",
     "drupal/admin_toolbar": "^1.22",
     "drupal/bootstrap": "^3.9",
+    "drupal/devel": "1.*@dev",
     "drupal/coffee": "^1.0@beta",
     "drupal/config_direct_save": "^1.0",
     "drupal/config_installer": "^1.0",
