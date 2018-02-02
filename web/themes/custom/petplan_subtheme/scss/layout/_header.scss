@@ -1,4 +1,4 @@
-nav {
+.navHeader {
     background-color: $white !important;
     border: none !important;
     font-size: 16px;
@@ -166,7 +166,7 @@ nav {
 // Styles for Larger Screens
 @media only screen and (min-width : $screen-md) {
     // anything over 1200
-    nav {
+    .navHeader {
         height: 94px;
         width: 100%;
         padding-bottom: 23px;
@@ -275,7 +275,7 @@ nav {
 @media only screen and (max-width : $screen-md-max + 105) {
     // 1200 + 105 because both menus crash at that width
     // Trying to minify as much as possible
-    nav {
+    .navHeader {
         font-size: 16px;
         .logo {
             padding-right: 0px;

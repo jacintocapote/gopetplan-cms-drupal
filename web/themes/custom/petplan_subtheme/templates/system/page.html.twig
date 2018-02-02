@@ -57,7 +57,7 @@
   {% block navbar %}
     {%
       set navbar_classes = [
-        'navbar',
+        'navbar navHeader',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
@@ -67,7 +67,7 @@
         {% if not navbar_attributes.hasClass(container) %}
           <div class="{{ container }}">
         {% endif %}
-        <div class="navbar-header">        
+        <div class="navbar-header">
           {# .btn-navbar is used as the toggle for collapsed navbar content #}
           {% if page.navigation_collapsible %}
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -102,10 +102,10 @@
 
         {# Navigation (collapsible) #}
         {% if page.navigation_collapsible %}
-          <div id="navbar" class="navbar-collapse collapse">     
-            <ul class="nav navbar-nav navbar-left blue">            
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left blue">
                   <li class="dropdown"  uib-dropdown on-toggle="toggled(open)">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">why Petplan 
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">why Petplan
                           <span class="arrow">
                               <img class="dropIconWeb" src="{{ url('<front>') }}{{ directory }}/images/icon_dropdown_blue.svg">
                           </span>
@@ -117,7 +117,7 @@
                                   compare providers <img src="{{ url('<front>') }}{{ directory }}/images/arrow_dark_right.svg" alt="">
                               </a>
                           </li>
-                          <li ><a href="faqs.dashboard">faqs <img src="{{ url('<front>') }}{{ directory }}/images/arrow_dark_right.svg" alt=""></a></a></li>                        
+                          <li ><a href="faqs.dashboard">faqs <img src="{{ url('<front>') }}{{ directory }}/images/arrow_dark_right.svg" alt=""></a></a></li>
                       </ul>
                   </li>
                   <li><a class="singleBtn" href="/dog-insurance">dog insurance</a></li>
@@ -128,13 +128,13 @@
                               start a quote
                              <img class="arrow-white-right" src="{{ url('<front>') }}{{ directory }}/images/arrow_white_right.svg">
                           </a>
-                      </div>                     
+                      </div>
                   </li>
               </ul>
               <ul class="nav navbar-nav navbar-right orange">
                   <li class="dropdown">
                       <a href="#" id="left-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                          pet health 
+                          pet health
                           <span class="arrow">
                               <img class="dropIconWeb" src="{{ url('<front>') }}{{ directory }}/images/icon_dropdown_orange.svg">
                           </span>
@@ -149,7 +149,7 @@
                   </li>
                   <li class="dropdown">
                       <a href="claims-center" id="right-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                          claims 
+                          claims
                           <span class="arrow">
                               <img class="dropIconWeb" src="{{ url('<front>') }}{{ directory }}/images/icon_dropdown_orange.svg">
                           </span>
@@ -266,6 +266,16 @@
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
       {{ page.footer }}
+    </footer>
+  {% endblock %}
+{% endif %}
+
+{% if page.copywrite %}
+  {% block copywrite %}
+    <footer class="copywrite {{ container }}" role="contentinfo">
+      <div class="row">
+        {{ page.copywrite }}
+      </div>
     </footer>
   {% endblock %}
 {% endif %}

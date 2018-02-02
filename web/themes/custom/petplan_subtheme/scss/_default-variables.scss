@@ -23,3 +23,146 @@ $vag: "VAGRoundedBT-Regular", sans-serif;
 
 $font-family-sans-serif: $avenir--book;
 
+
+///Primary Petplan Font: Avenir-book
+///@group Text
+$font-family--primary: $avenir--book;
+///Secondary Petplan Font: Vag
+///@group Text
+$font-family--secondary: $vag;
+///Bold Font: Avenir-heavy
+///@group Text
+$font-family--bold: $avenir--heavy;
+///X-Bold Font: Avenir-black
+///@group Text
+$font-family--x-bold: $avenir--black;
+///Petplan Cursive Font: Hand of Sean
+///@group Text
+$font-family--hos: $hand-of-sean;
+
+$icomoon-font-path: '../app/font/petplan-icomoon' !default;
+$icomoon-font: "petplan-icomoon";
+$pathImg: '../img/';
+$icomoon-font-path: '../font/petplan-icomoon' !default;
+$icomoon-font: "petplan-icomoon";
+$fontSize: 16px;
+$icon-arrow-left: "\e900";
+$icon-arrow-right: "\e901";
+$icon-dropdown: "\e902";
+/* End Variables */
+
+// Main Colors
+$blue: #64b6cf;
+$blue2: #71b6d0;
+$orange: #fcb316;
+$lightOrange: #ffe98f;
+$dark: #818181;
+$lightgray: #f6f6f6;
+$colorBold: #a7a9ac;
+$colorText: #818181;
+$colorError: #D32028;
+
+//Descriptive Base Colors
+///Petplan Blue
+///@type Color
+///@group Color Definitions
+$downy: #71B6D0;
+///Petplan Yellow
+///@type Color
+///@group Color Definitions
+$sun: #FCB316;
+///Petplan Light Yellow
+///@type Color
+///@group Color Definitions
+$salomie: #FFE98F;
+///Petplan Medium Yellow
+///@type Color
+///@group Color Definitions
+$bright-sun: #FDC245;
+///Petplan Light Grey
+///@type Color
+///@group Color Definitions
+$wild-sand: #F6F6F6;
+///Petplan Grey
+///@type Color
+///@group Color Definitions
+$alto: #D9D9D9;
+///Petplan Dark Grey
+///@type Color
+///@group Color Definitions
+$aluminum: #A7A9AC;
+///Petplan X Dark Grey
+///@type Color
+///@group Color Definitions
+$dgray: #818181;
+///Petplan Warning/Error
+///@type Color
+///@group Color Definitions
+$cardinal: #D32028;
+///Default White
+///@type Color
+///@group Color Definitions
+$white: #FFF;
+
+//Color Usage
+///Petplan Primary Color: Yellow
+///@type Color
+///@requires {Color} $sun
+///@group Color Usage
+$color-primary: $sun;
+///Petplan Secondary Color: Blue
+///@type Color
+///@require {Color} $downy
+///@group Color Usage
+$color-secondary: $downy;
+///Petplan Warning/Error Color: Red
+///@type Color
+///@requires {Color} $cardinal
+///@group Color Usage
+$color-warning: $cardinal;
+///Petplan Subtle Color: Pale Yellow
+///@type Color
+///@requires {Color} $salomie
+///@group Color Usage
+$color-subtle: $salomie;
+
+//Grey Usages
+///Petplan Default Grey
+///@type Color
+///@requires {Color} $alto
+///@group Color Usage
+$grey: $alto;
+///Petplan Default Light Grey
+///@type Color
+///@requires {Color} $wild-sand
+///@group Color Usage
+$light-grey: $wild-sand;
+///Petplan Default Dark Grey
+///@type Color
+///@requires {Color} $aluminum
+///@group Color Usage
+$dark-grey: $aluminum;
+///Petplan Default Extra Dark Grey
+///@type Color
+///@requires {Color} $dgray
+///@group Color Usage
+$x-dark-grey: $dgray;
+
+//Border Radius
+/// Default Border Radius
+/// @group border radius
+$br--default: 10px;
+/// Border Radius for Circles
+/// @group border radius
+$br--rounded: 50%;
+/// Remove Border Radius
+/// @group border radius
+$br--none: 0;
+
+// Transitions
+///Default Transition Duration
+///@group Animations and Transitions
+$trns-duration: .2s;
+///Default Transition Delay
+///@group Animations and Transitions
+$trns-delay: 50ms;
