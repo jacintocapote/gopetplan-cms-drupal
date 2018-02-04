@@ -16,4 +16,4 @@ terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
 
 # Delete leftover CI environments
 # Pending integration with Bitbutcket
-terminus -n build:env:delete:ci "$TERMINUS_SITE" --keep=2 --yes
+#terminus -n build:env:delete:ci "$TERMINUS_SITE" --keep=2 --yes
