@@ -122,9 +122,9 @@ jobs:
                 name: handle merge to master (if needed)
                 command: ./.circleci/scripts/pantheon/04-merge-master
 
-#            - run:
-#                name: remove transient test fixtures
-#                command: ./.circleci/scripts/pantheon/09-cleanup-fixtures
+            - run:
+                name: remove transient test fixtures
+                command: ./.circleci/scripts/pantheon/09-cleanup-fixtures
 
     # TODO:
     # 04-merge-master
