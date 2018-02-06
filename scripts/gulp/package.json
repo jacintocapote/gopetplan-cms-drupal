@@ -1,0 +1,23 @@
+{
+  "name": "gopetplan-cms-drupal",
+  "version": "1.0.0",
+  "description": "add a new site to sites: ``` - map: local.gopetplan.com   to: /home/vagrant/code/gopetplan-cms-drupal ```",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-debug": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/petplan-digital/gopetplan-cms-drupal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/petplan-digital/gopetplan-cms-drupal#readme"
+}
