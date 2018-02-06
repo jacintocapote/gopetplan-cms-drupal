@@ -107,7 +107,7 @@ jobs:
 
             - run:
                 name: install-npm
-                command: sudo apt-get install nodejs npm
+                command: sudo apt-get install nodejs npm -y
 
             - run:
                 name: build gulp assets
