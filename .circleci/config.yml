@@ -106,6 +106,10 @@ jobs:
                 command: composer -n build-assets
 
             - run:
+                name: install-npm
+                command: npm install -g npm
+
+            - run:
                 name: build gulp assets
                 command: ./.circleci/scripts/build-gulp-assets.sh
 
