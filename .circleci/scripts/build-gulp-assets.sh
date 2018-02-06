@@ -4,15 +4,6 @@
 # Build assets with gulp
 #
 
-EXE=gulp
-
-FOUND=`which $EXE`
-if [ ! -x "$FOUND" ]
-then
-	echo -e "\nError: executable gulp not found on path"
-	exit 1
-fi
-
 # Look for gulpfile.js occurrences NOT in node_modules
 echo -e "\nLooking for gulpfile.js occurrences NOT in node_modules.."
 FILE=gulpfile.*js

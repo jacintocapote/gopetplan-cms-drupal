@@ -107,7 +107,7 @@ jobs:
 
             - run:
                 name: build gulp assets
-                command: ./.circleci/build-gulp-assets.sh
+                command: ./.circleci/scripts/build-gulp-assets.sh
 
             - run:
                 name: prepare database for site-under test
