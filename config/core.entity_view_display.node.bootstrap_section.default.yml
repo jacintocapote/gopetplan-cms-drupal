@@ -1,0 +1,28 @@
+uuid: 9bf284a8-3c00-474b-ba7a-6b1d68b4c7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bootstrap_section.body
+    - node.type.bootstrap_section
+  module:
+    - text
+    - user
+id: node.bootstrap_section.default
+targetEntityType: node
+bundle: bootstrap_section
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

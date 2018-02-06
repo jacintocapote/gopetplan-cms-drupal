@@ -1,0 +1,28 @@
+uuid: b5696fe7-ace8-474f-b28c-206a04ab321b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bootstrap_section.body
+    - node.type.bootstrap_section
+  module:
+    - text
+    - user
+id: node.bootstrap_section.teaser
+targetEntityType: node
+bundle: bootstrap_section
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: c32d37dd-63b8-459d-b0aa-83ab7af05b20
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: bootstrap_section
+type: bootstrap_section
+description: 'This should be a simple bootstrap section, as the come from the static site'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

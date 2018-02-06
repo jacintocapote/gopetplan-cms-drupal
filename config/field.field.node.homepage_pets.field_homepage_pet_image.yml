@@ -1,27 +1,25 @@
-uuid: 0eca099d-31f2-4509-98ac-321a5598bf3c
+uuid: 4dd6606f-1225-47c5-af8a-24a2987a1fc3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.article
+    - field.storage.node.field_homepage_pet_image
+    - node.type.homepage_pets
   module:
     - image
-_core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
-id: node.article.field_image
-field_name: field_image
+id: node.homepage_pets.field_homepage_pet_image
+field_name: field_homepage_pet_image
 entity_type: node
-bundle: article
-label: Image
+bundle: homepage_pets
+label: homepage_pet_image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg svg'
+  file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''

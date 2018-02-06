@@ -1,0 +1,27 @@
+uuid: 410e6ee4-1112-42f9-9f51-3e9207247444
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.bootstrap_section.body
+    - node.type.bootstrap_section
+  module:
+    - text
+    - user
+id: node.bootstrap_section.full
+targetEntityType: node
+bundle: bootstrap_section
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

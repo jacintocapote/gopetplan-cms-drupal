@@ -1,0 +1,31 @@
+uuid: fa6a836b-c4ad-45cf-82cb-8a23d08d863f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c4d3a4a3-a47a-4d7e-9f3d-ab994a8920bf'
+  module:
+    - block_content
+    - system
+  theme:
+    - petplan_subtheme
+id: homepagehero
+theme: petplan_subtheme
+region: highlighted
+weight: -7
+provider: null
+plugin: 'block_content:c4d3a4a3-a47a-4d7e-9f3d-ab994a8920bf'
+settings:
+  id: 'block_content:c4d3a4a3-a47a-4d7e-9f3d-ab994a8920bf'
+  label: homepage-hero
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

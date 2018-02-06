@@ -1,4 +1,4 @@
-uuid: 92120b6a-0dce-4f58-b63a-3624f66ec6d7
+uuid: 11b08955-a2f9-4f58-a5b0-384609ad0551
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - petplan_subtheme
+    - bootstrap_mint
 _core:
-  default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
-id: petplan_subtheme_main_menu
-theme: petplan_subtheme
-region: navigation_collapsible
-weight: -7
+  default_config_hash: W4GQTsN3n8N0VeV5jLOhbchgQgKGkbREU6-cKNuG3yg
+id: bootstrap_mint_main_menu
+theme: bootstrap_mint
+region: primary_menu
+weight: 10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

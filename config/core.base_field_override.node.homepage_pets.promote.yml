@@ -1,0 +1,22 @@
+uuid: 978542b9-c155-4f73-b894-3018f741ac8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_pets
+id: node.homepage_pets.promote
+field_name: promote
+entity_type: node
+bundle: homepage_pets
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

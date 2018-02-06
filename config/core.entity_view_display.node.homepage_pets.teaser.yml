@@ -1,0 +1,28 @@
+uuid: 344baf74-56c1-45d3-8c0f-cfab5e665112
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_pets.body
+    - node.type.homepage_pets
+  module:
+    - text
+    - user
+id: node.homepage_pets.teaser
+targetEntityType: node
+bundle: homepage_pets
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

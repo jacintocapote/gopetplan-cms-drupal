@@ -1,0 +1,41 @@
+uuid: 38eadb3d-6fd6-4048-82ac-052d1bc02882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_pets.body
+    - field.field.node.homepage_pets.field_homepage_pet_image
+    - node.type.homepage_pets
+  module:
+    - svg_image
+    - text
+    - user
+id: node.homepage_pets.default
+targetEntityType: node
+bundle: homepage_pets
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_homepage_pet_image:
+    weight: 102
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

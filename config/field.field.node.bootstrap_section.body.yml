@@ -1,0 +1,26 @@
+uuid: 80dcc629-c14d-40bf-b408-0a128eada8da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bootstrap_section
+  module:
+    - text
+id: node.bootstrap_section.body
+field_name: body
+entity_type: node
+bundle: bootstrap_section
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<div class=\"row\">\r\n<div class=\"col-xs-12\">\r\nSingle Column Layout\r\n</div>\r\n</div>"
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

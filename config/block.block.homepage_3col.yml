@@ -1,0 +1,31 @@
+uuid: 65ecb0bd-1387-4d2a-90be-dc64d1421be8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f6f5a82-740a-4063-9e9c-861bbcc4e05d'
+  module:
+    - block_content
+    - system
+  theme:
+    - petplan_subtheme
+id: homepage_3col
+theme: petplan_subtheme
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:2f6f5a82-740a-4063-9e9c-861bbcc4e05d'
+settings:
+  id: 'block_content:2f6f5a82-740a-4063-9e9c-861bbcc4e05d'
+  label: Homepage_3Col
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

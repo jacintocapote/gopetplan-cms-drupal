@@ -1,0 +1,30 @@
+uuid: bee8d4b0-ca0d-4dc3-8472-9b038fbf5b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_petslider_147x141
+  module:
+    - system
+    - views
+  theme:
+    - petplan_subtheme
+id: views_block__frontpage_petslider
+theme: petplan_subtheme
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:frontpage_petslider_147x141-block_1'
+settings:
+  id: 'views_block:frontpage_petslider_147x141-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

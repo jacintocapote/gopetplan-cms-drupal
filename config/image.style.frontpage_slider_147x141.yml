@@ -1,0 +1,14 @@
+uuid: 8d99e609-34eb-49ae-8971-9701162a0f5c
+langcode: en
+status: true
+dependencies: {  }
+name: frontpage_slider_147x141
+label: frontpage_slider_147x141
+effects:
+  40abac37-cb25-4e48-9d10-a9ec810fe04d:
+    uuid: 40abac37-cb25-4e48-9d10-a9ec810fe04d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 147
+      height: 141

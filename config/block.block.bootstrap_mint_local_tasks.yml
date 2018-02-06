@@ -1,15 +1,15 @@
-uuid: dd40e78d-3f09-4ceb-9c57-1a547da4e8ab
+uuid: 700d2ef9-27ba-4865-84ab-9ea7b924e2f3
 langcode: en
 status: true
 dependencies:
   theme:
-    - petplan_subtheme
+    - bootstrap_mint
 _core:
-  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
-id: petplan_subtheme_local_tasks
-theme: petplan_subtheme
-region: header
-weight: -7
+  default_config_hash: mqqjbFgPGdkvULb-iMntFssFZ08SuDdzu42y7xLZXL8
+id: bootstrap_mint_local_tasks
+theme: bootstrap_mint
+region: content
+weight: 1
 provider: null
 plugin: local_tasks_block
 settings:

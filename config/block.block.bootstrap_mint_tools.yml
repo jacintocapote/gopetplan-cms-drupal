@@ -1,0 +1,26 @@
+uuid: cd3ecf89-31a4-4b6a-a190-d5d68335b57b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bootstrap_mint
+_core:
+  default_config_hash: Cw8NNBRAWK6hROi6RAXXMRjrYzVSB8O_d-cqhUNgMtY
+id: bootstrap_mint_tools
+theme: bootstrap_mint
+region: optional_blocks
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

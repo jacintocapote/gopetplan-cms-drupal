@@ -1,17 +1,17 @@
-uuid: 657c5527-1d3f-4255-8996-44009a919e9d
+uuid: c505ed73-84ce-407d-a80e-825968d74180
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - petplan_subtheme
+    - bootstrap_mint
 _core:
-  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
-id: petplan_subtheme_help
-theme: petplan_subtheme
+  default_config_hash: Gt1ED6wm9_R_msYtLloohw3SrpIDeIOFviiB7ilAOzA
+id: bootstrap_mint_help
+theme: bootstrap_mint
 region: help
-weight: -7
+weight: -30
 provider: null
 plugin: help_block
 settings:

@@ -1,0 +1,17 @@
+uuid: 16e1b6e8-6b0f-4859-ac18-ab829253da81
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: homepage_pets
+type: homepage_pets
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

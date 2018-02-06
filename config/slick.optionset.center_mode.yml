@@ -1,0 +1,65 @@
+uuid: 2fad9d05-f362-4349-8ca0-d8c383abced1
+langcode: en
+status: true
+dependencies: {  }
+id: center_mode
+name: center_mode
+label: center_mode
+weight: 0
+group: main
+skin: grid
+breakpoints: 0
+optimized: false
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: false
+    asNavFor: ''
+    accessibility: false
+    adaptiveHeight: false
+    autoplay: false
+    autoplaySpeed: 3000
+    pauseOnHover: true
+    pauseOnDotsHover: false
+    arrows: true
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>'
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>'
+    downArrow: false
+    downArrowTarget: ''
+    downArrowOffset: 0
+    centerMode: true
+    centerPadding: 40px
+    dots: true
+    dotsClass: slick-dots
+    appendDots: $(element)
+    draggable: false
+    fade: false
+    focusOnSelect: false
+    infinite: true
+    initialSlide: 3
+    lazyLoad: ''
+    mouseWheel: false
+    randomize: false
+    respondTo: window
+    rtl: false
+    rows: 1
+    slidesPerRow: 1
+    slide: ''
+    slidesToShow: 5
+    slidesToScroll: 1
+    speed: 500
+    swipe: true
+    swipeToSlide: false
+    edgeFriction: 0.35
+    touchMove: true
+    touchThreshold: 5
+    useCSS: true
+    cssEase: ease
+    cssEaseBezier: ''
+    cssEaseOverride: ''
+    useTransform: true
+    easing: linear
+    variableWidth: false
+    vertical: false
+    verticalSwiping: false
+    waitForAnimate: false

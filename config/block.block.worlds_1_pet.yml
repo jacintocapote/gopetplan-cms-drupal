@@ -1,0 +1,31 @@
+uuid: d7e4c95e-b803-497d-81fd-4f4597b089ef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a65696b4-238c-466c-877b-889c6d79f4c8'
+  module:
+    - block_content
+    - system
+  theme:
+    - petplan_subtheme
+id: worlds_1_pet
+theme: petplan_subtheme
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:a65696b4-238c-466c-877b-889c6d79f4c8'
+settings:
+  id: 'block_content:a65696b4-238c-466c-877b-889c6d79f4c8'
+  label: worlds_1_pet
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
